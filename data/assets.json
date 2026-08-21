@@ -2,7 +2,7 @@
  "library": {
   "articulated_total": 5000,
   "categories_total": 47,
-  "curated": 90
+  "curated": 96
  },
  "assets": [
   {
@@ -27,6 +27,210 @@
     "friction": 0.55,
     "restitution": 0.05,
     "material": "coated_steel",
+    "engine": "isaac-physx"
+   },
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": true
+  },
+  {
+   "slug": "chrome_faucet",
+   "name_cn": "铬水龙头",
+   "name_en": "Chrome Faucet",
+   "kind": "articulated",
+   "category": "Faucet",
+   "dataset": "SimGen hinge",
+   "hero": false,
+   "joints": [
+    {
+     "name": "handle_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 0.7854
+    },
+    {
+     "name": "spout_joint",
+     "type": "revolute",
+     "lower": -0.7854,
+     "upper": 0.7854
+    }
+   ],
+   "dof": 2,
+   "physics": {
+    "mass": 0.9,
+    "friction": 0.35,
+    "restitution": 0.08,
+    "material": "chrome_brass",
+    "engine": "isaac-physx"
+   },
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": true
+  },
+  {
+   "slug": "front_load_washing_machine",
+   "name_cn": "滚筒洗衣机",
+   "name_en": "Front-Load Washing Machine",
+   "kind": "articulated",
+   "category": "Washing Machine",
+   "dataset": "SimGen hinge",
+   "hero": false,
+   "joints": [
+    {
+     "name": "door_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 0.75049
+    }
+   ],
+   "dof": 1,
+   "physics": {
+    "mass": 68.0,
+    "friction": 0.55,
+    "restitution": 0.08,
+    "material": "enameled_steel_stainless_drum",
+    "engine": "isaac-physx"
+   },
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": true
+  },
+  {
+   "slug": "microwave_oven",
+   "name_cn": "微波炉",
+   "name_en": "Microwave Oven",
+   "kind": "articulated",
+   "category": "Microwave",
+   "dataset": "SimGen hinge",
+   "hero": false,
+   "joints": [
+    {
+     "name": "door_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.5708
+    }
+   ],
+   "dof": 1,
+   "physics": {
+    "mass": 10.5,
+    "friction": 0.55,
+    "restitution": 0.06,
+    "material": "painted_steel",
+    "engine": "isaac-physx"
+   },
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": true
+  },
+  {
+   "slug": "red_water_bottle",
+   "name_cn": "红色水瓶",
+   "name_en": "Red Water Bottle",
+   "kind": "articulated",
+   "category": "Bottle",
+   "dataset": "SimGen hinge",
+   "hero": false,
+   "joints": [
+    {
+     "name": "flip_lid_joint",
+     "type": "revolute",
+     "lower": -1.74533,
+     "upper": 0.0
+    }
+   ],
+   "dof": 1,
+   "physics": {
+    "mass": 0.32,
+    "friction": 0.7,
+    "restitution": 0.1,
+    "material": "generic",
+    "engine": "isaac-physx"
+   },
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": true
+  },
+  {
+   "slug": "stainless_steel_sink",
+   "name_cn": "不锈钢水槽",
+   "name_en": "Stainless Steel Sink",
+   "kind": "articulated",
+   "category": "Sink",
+   "dataset": "SimGen hinge",
+   "hero": false,
+   "joints": [
+    {
+     "name": "spout_joint",
+     "type": "revolute",
+     "lower": -0.38397,
+     "upper": 0.38397
+    }
+   ],
+   "dof": 1,
+   "physics": {
+    "mass": 7.0,
+    "friction": 0.5,
+    "restitution": 0.1,
+    "material": "brushed_stainless",
+    "engine": "isaac-physx"
+   },
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": true
+  },
+  {
+   "slug": "wooden_cabinet_lower",
+   "name_cn": "木质底柜",
+   "name_en": "Wooden Cabinet",
+   "kind": "articulated",
+   "category": "Cabinet",
+   "dataset": "SimGen hinge",
+   "hero": false,
+   "joints": [
+    {
+     "name": "left_door_joint",
+     "type": "revolute",
+     "lower": -1.5708,
+     "upper": 0.0
+    },
+    {
+     "name": "right_door_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.5708
+    }
+   ],
+   "dof": 2,
+   "physics": {
+    "mass": 22.0,
+    "friction": 0.62,
+    "restitution": 0.04,
+    "material": "engineered_wood",
     "engine": "isaac-physx"
    },
    "formats": [

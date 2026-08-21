@@ -86,6 +86,12 @@
   </div>
 </div>
 
+<script>
+  // must run before model-viewer.min.js evaluates — self-hosted Draco decoder
+  self.ModelViewerElement = self.ModelViewerElement || {};
+  self.ModelViewerElement.dracoDecoderLocation =
+    new URL("vendor/draco/", document.baseURI).href;
+</script>
 <script src="vendor/model-viewer.min.js" type="module"></script>
 <script src="js/app.js" type="module"></script>
 </body>
