@@ -1,0 +1,2628 @@
+{
+ "library": {
+  "articulated_total": 5000,
+  "categories_total": 47,
+  "curated": 89
+ },
+ "assets": [
+  {
+   "slug": "kettle_0038",
+   "name_cn": "水壶",
+   "name_en": "Kettle",
+   "kind": "articulated",
+   "category": "Kettle",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "microwave_0023",
+   "name_cn": "微波炉",
+   "name_en": "Microwave",
+   "kind": "articulated",
+   "category": "Microwave",
+   "dataset": "Infinigen",
+   "hero": true,
+   "joints": [
+    {
+     "name": "plate_joint_0",
+     "type": "revolute",
+     "lower": -3.141592653589793,
+     "upper": 3.141592653589793
+    },
+    {
+     "name": "door_joint_0",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.8000001
+    },
+    {
+     "name": "button joint_0",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.0386785573382
+    }
+   ],
+   "dof": 3,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "washing_machine_0002",
+   "name_cn": "洗衣机",
+   "name_en": "Washing machine",
+   "kind": "articulated",
+   "category": "Washing Machine",
+   "dataset": "PartNeXt",
+   "hero": true,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 2.57610597594363
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "refrigerator_0075",
+   "name_cn": "冰箱",
+   "name_en": "Refrigerator",
+   "kind": "articulated",
+   "category": "Refrigerator",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": -1.7369074909316138,
+     "upper": 0.0
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "excavator_0023",
+   "name_cn": "挖掘机",
+   "name_en": "Excavator",
+   "kind": "articulated",
+   "category": "Excavator",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Ae001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_Ae001_Ad001_r",
+     "type": "revolute",
+     "lower": -1.31758530717959,
+     "upper": 0.592714692820414
+    },
+    {
+     "name": "joint_dof_Ad001_Ac001_r",
+     "type": "revolute",
+     "lower": -0.498885307179586,
+     "upper": 2.77591469282041
+    },
+    {
+     "name": "joint_dof_Ac001_Ab001_r",
+     "type": "revolute",
+     "lower": -0.771785307179586,
+     "upper": 0.865614692820414
+    },
+    {
+     "name": "joint_dof_Ab001_Aa001_r",
+     "type": "revolute",
+     "lower": -0.635385307179586,
+     "upper": 2.77591469282041
+    },
+    {
+     "name": "joint_dof_rootd_Ba001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ba002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ba003_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ba004_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 9,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "door_0011",
+   "name_cn": "门",
+   "name_en": "Door",
+   "kind": "articulated",
+   "category": "Door",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.5707963268
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "cabinet_0025",
+   "name_cn": "柜子",
+   "name_en": "Cabinet",
+   "kind": "articulated",
+   "category": "Cabinet",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_t",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.25
+    },
+    {
+     "name": "joint_dof_rootd_Aa002_t",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.25
+    },
+    {
+     "name": "joint_dof_rootd_Aa003_t",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.25
+    },
+    {
+     "name": "joint_dof_rootd_Aa004_t",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.25
+    },
+    {
+     "name": "joint_dof_rootd_Ba001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.9946126396507766
+    },
+    {
+     "name": "joint_dof_rootd_Bb001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 2.4155683195553155
+    }
+   ],
+   "dof": 6,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "drawer_0026",
+   "name_cn": "抽屉柜",
+   "name_en": "Drawer",
+   "kind": "articulated",
+   "category": "Drawer",
+   "dataset": "Infinigen",
+   "hero": true,
+   "joints": [
+    {
+     "name": "drawer_slider_0",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.643419997244
+    },
+    {
+     "name": "drawer_slider_1",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.643419997244
+    },
+    {
+     "name": "drawer_slider_2",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.643419997244
+    },
+    {
+     "name": "drawer_slider_3",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.643419997244
+    }
+   ],
+   "dof": 4,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "swiss_army_knife_0003",
+   "name_cn": "瑞士军刀",
+   "name_en": "Swiss Army knife",
+   "kind": "articulated",
+   "category": "Swiss Army Knife",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": -0.31588497113353536,
+     "upper": 0.0
+    },
+    {
+     "name": "joint_dof_rootd_Ba001_r",
+     "type": "revolute",
+     "lower": -0.6731035539567791,
+     "upper": 0.0
+    },
+    {
+     "name": "joint_dof_rootd_Ca001_r",
+     "type": "revolute",
+     "lower": -0.9182524337640705,
+     "upper": 0.0
+    }
+   ],
+   "dof": 3,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "scissors_0004",
+   "name_cn": "剪刀",
+   "name_en": "Scissors",
+   "kind": "articulated",
+   "category": "Scissors",
+   "dataset": "PartNeXt",
+   "hero": true,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.0053096491487339
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "folding_chair_0004",
+   "name_cn": "折叠椅",
+   "name_en": "Folding chair",
+   "kind": "articulated",
+   "category": "Folding Chair",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 0.6981317008
+    },
+    {
+     "name": "joint_dof_Aa001_Ba001_r",
+     "type": "revolute",
+     "lower": -1.8325957145940461,
+     "upper": 0.0
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "lamp_0018",
+   "name_cn": "台灯",
+   "name_en": "Lamp",
+   "kind": "articulated",
+   "category": "Lamp",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Ab001_r",
+     "type": "revolute",
+     "lower": -1.18118530717959,
+     "upper": 2.50301469282041
+    },
+    {
+     "name": "joint_dof_Ab001_Aa001_r",
+     "type": "revolute",
+     "lower": 0.456214692820414,
+     "upper": 1.95721469282041
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "globe_0025",
+   "name_cn": "地球仪",
+   "name_en": "Globe",
+   "kind": "articulated",
+   "category": "Globe",
+   "dataset": "Agentic",
+   "hero": true,
+   "joints": [
+    {
+     "name": "globe_spin",
+     "type": "continuous",
+     "lower": 0.0,
+     "upper": 0.0
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "motorbike_0004",
+   "name_cn": "摩托车",
+   "name_en": "Motorcycle",
+   "kind": "articulated",
+   "category": "Motorbike",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": -0.5235987755982988,
+     "upper": 0.5235987755982988
+    },
+    {
+     "name": "joint_dof_Aa001_Ba001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ba002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 3,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "faucet_0113",
+   "name_cn": "水龙头",
+   "name_en": "Faucet",
+   "kind": "articulated",
+   "category": "Faucet",
+   "dataset": "Shape2Motion",
+   "hero": true,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": -0.56897958218779,
+     "upper": 0.24705603341975493
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "skateboard_0201",
+   "name_cn": "滑板",
+   "name_en": "Skateboard",
+   "kind": "articulated",
+   "category": "Skateboard",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa003_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa004_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa005_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa006_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa007_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa008_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 8,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "pliers_0021",
+   "name_cn": "钳子",
+   "name_en": "Pliers",
+   "kind": "articulated",
+   "category": "Pliers",
+   "dataset": "PartNeXt",
+   "hero": false,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 0.5026548245743669
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "table_0192",
+   "name_cn": "桌子",
+   "name_en": "Table",
+   "kind": "articulated",
+   "category": "Table",
+   "dataset": "PartNeXt",
+   "hero": false,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.310681413981
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "watch_0004",
+   "name_cn": "手表",
+   "name_en": "Watch",
+   "kind": "articulated",
+   "category": "Watch",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "bucket_0075",
+   "name_cn": "水桶",
+   "name_en": "Bucket",
+   "kind": "articulated",
+   "category": "Bucket",
+   "dataset": "PartNeXt",
+   "hero": false,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": -1.570796,
+     "upper": 1.570796
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "toilet_0050",
+   "name_cn": "马桶",
+   "name_en": "Toilet",
+   "kind": "articulated",
+   "category": "Toilet",
+   "dataset": "PartNeXt",
+   "hero": false,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.63362818
+    },
+    {
+     "name": "group2_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "bike_0012",
+   "name_cn": "自行车",
+   "name_en": "Bicycle",
+   "kind": "articulated",
+   "category": "Bike",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": -1.0471975511965976,
+     "upper": 1.0471975511965976
+    },
+    {
+     "name": "joint_dof_Aa001_Ca001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ba001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ca002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 4,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "dishwasher_0001",
+   "name_cn": "洗碗机",
+   "name_en": "Dishwasher",
+   "kind": "articulated",
+   "category": "Dishwasher",
+   "dataset": "Infinigen",
+   "hero": false,
+   "joints": [
+    {
+     "name": "rack_joint_0",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.562295605547
+    },
+    {
+     "name": "rack_joint_1",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.562295605547
+    },
+    {
+     "name": "door_joint_0",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.5
+    },
+    {
+     "name": "knob_joint_0",
+     "type": "revolute",
+     "lower": -3.141592653589793,
+     "upper": 3.141592653589793
+    }
+   ],
+   "dof": 4,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "carton_0019",
+   "name_cn": "纸箱",
+   "name_en": "Carton",
+   "kind": "articulated",
+   "category": "Carton",
+   "dataset": "Agentic",
+   "hero": false,
+   "joints": [
+    {
+     "name": "front_flap_hinge",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.6057
+    },
+    {
+     "name": "rear_flap_hinge",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.6057
+    },
+    {
+     "name": "end_flap_0_hinge",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.6057
+    },
+    {
+     "name": "end_flap_1_hinge",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.6057
+    }
+   ],
+   "dof": 4,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "clock_0025",
+   "name_cn": "时钟",
+   "name_en": "Clock",
+   "kind": "articulated",
+   "category": "Clock",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "stapler_0022",
+   "name_cn": "订书机",
+   "name_en": "Stapler",
+   "kind": "articulated",
+   "category": "Stapler",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.5707963267948966
+    },
+    {
+     "name": "joint_dof_rootd_Ba001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.5707963267948966
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "door_0033",
+   "name_cn": "门",
+   "name_en": "Door",
+   "kind": "articulated",
+   "category": "Door",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.5707963268
+    },
+    {
+     "name": "joint_dof_rootd_Aa002_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.5707963268
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "glasses_0040",
+   "name_cn": "眼镜",
+   "name_en": "Glasses",
+   "kind": "articulated",
+   "category": "Glasses",
+   "dataset": "PartNeXt",
+   "hero": false,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "group2_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "handcart_0085",
+   "name_cn": "手推车",
+   "name_en": "Handcart",
+   "kind": "articulated",
+   "category": "Handcart",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa003_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Aa004_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 4,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "oven_0016",
+   "name_cn": "烤箱",
+   "name_en": "Oven",
+   "kind": "articulated",
+   "category": "Oven",
+   "dataset": "PartNeXt",
+   "hero": false,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Oven_Door_2_joint",
+     "type": "revolute",
+     "lower": -0.05235987756,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Oven_Bottom_1_joint",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "Oven_Bottom_2_joint",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "Oven_Bottom_3_joint",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "Door_1_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_2_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_3_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_4_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_5_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_6_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_7_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_8_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_9_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_10_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_11_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_12_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_13_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Door_14_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    },
+    {
+     "name": "Oven_2_Bottom_1_joint",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "Oven_2_Bottom_2_joint",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "Faucet_handle_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.570796327
+    }
+   ],
+   "dof": 22,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "pencil_sharpener_0008",
+   "name_cn": "卷笔刀",
+   "name_en": "Pencil sharpener",
+   "kind": "articulated",
+   "category": "Pencil Sharpener",
+   "dataset": "Agentic",
+   "hero": false,
+   "joints": [
+    {
+     "name": "housing_to_crank_cutter",
+     "type": "continuous",
+     "lower": 0.0,
+     "upper": 0.0
+    },
+    {
+     "name": "housing_to_shavings_drawer",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.263959390863
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "bottle_0087",
+   "name_cn": "瓶子",
+   "name_en": "Bottle",
+   "kind": "articulated",
+   "category": "Bottle",
+   "dataset": "PartNeXt",
+   "hero": false,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.24
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "excavator_0012",
+   "name_cn": "挖掘机",
+   "name_en": "Excavator",
+   "kind": "articulated",
+   "category": "Excavator",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Ab001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.27501469282041
+    },
+    {
+     "name": "joint_dof_Ab001_Aa001_r",
+     "type": "revolute",
+     "lower": -0.908285307179586,
+     "upper": 0.0
+    },
+    {
+     "name": "joint_dof_rootd_Ba001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ba002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ba003_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Ba004_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 6,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "monitor_0221",
+   "name_cn": "显示器",
+   "name_en": "Monitor",
+   "kind": "articulated",
+   "category": "Monitor",
+   "dataset": "Agentic",
+   "hero": false,
+   "joints": [
+    {
+     "name": "base_to_stand",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "stand_to_screen",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 0.350000003
+    },
+    {
+     "name": "screen_to_menu_button_0",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.00666666666667
+    },
+    {
+     "name": "screen_to_menu_button_1",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.00666666666667
+    },
+    {
+     "name": "screen_to_menu_button_2",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.00666666666667
+    },
+    {
+     "name": "screen_to_menu_button_3",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.00666666666667
+    }
+   ],
+   "dof": 6,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "lighter_0032",
+   "name_cn": "打火机",
+   "name_en": "Lighter",
+   "kind": "articulated",
+   "category": "Lighter",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": -2.6167543081784603,
+     "upper": 0.0
+    },
+    {
+     "name": "joint_dof_rootd_Ba001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "swivel_chair_0007",
+   "name_cn": "转椅",
+   "name_en": "Swivel chair",
+   "kind": "articulated",
+   "category": "Swivel Chair",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_t",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.07
+    },
+    {
+     "name": "joint_dof_Aa001_Ba001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "postbox_0002",
+   "name_cn": "邮筒",
+   "name_en": "Mailbox",
+   "kind": "articulated",
+   "category": "Postbox",
+   "dataset": "Agentic",
+   "hero": false,
+   "joints": [
+    {
+     "name": "front_door_hinge",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.399999994
+    },
+    {
+     "name": "carrier_flag_hinge",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.449999995
+    }
+   ],
+   "dof": 2,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "seesaw_0025",
+   "name_cn": "跷跷板",
+   "name_en": "Seesaw",
+   "kind": "articulated",
+   "category": "Seesaw",
+   "dataset": "Agentic",
+   "hero": false,
+   "joints": [
+    {
+     "name": "base_to_beam",
+     "type": "revolute",
+     "lower": -0.32,
+     "upper": 0.32
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "trash_0054",
+   "name_cn": "翻盖垃圾桶",
+   "name_en": "Trash lid",
+   "kind": "articulated",
+   "category": "Trash",
+   "dataset": "Infinigen",
+   "hero": false,
+   "joints": [
+    {
+     "name": "rotating_sphere_joint_0",
+     "type": "revolute",
+     "lower": -1.0,
+     "upper": 1.0
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "pen_0009",
+   "name_cn": "笔",
+   "name_en": "Pen",
+   "kind": "articulated",
+   "category": "Pen",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_t",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.04
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "window_0083",
+   "name_cn": "窗户",
+   "name_en": "Window",
+   "kind": "articulated",
+   "category": "Window",
+   "dataset": "Infinigen",
+   "hero": false,
+   "joints": [
+    {
+     "name": "Lock_0",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.0
+    },
+    {
+     "name": "Lock_1",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.0
+    },
+    {
+     "name": "Lock_2",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.0
+    },
+    {
+     "name": "Lock_3",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.0
+    },
+    {
+     "name": "SlidingPanelL_0",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.198751854856
+    },
+    {
+     "name": "SlidingPanelL_1",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.198751854856
+    },
+    {
+     "name": "SlidingPanelR_0",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.198751854856
+    },
+    {
+     "name": "SlidingPanelR_1",
+     "type": "prismatic",
+     "lower": 0.0,
+     "upper": 0.198751854856
+    }
+   ],
+   "dof": 8,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "valve_0036",
+   "name_cn": "阀门",
+   "name_en": "Valve",
+   "kind": "articulated",
+   "category": "Valve",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "car_0004",
+   "name_cn": "汽车",
+   "name_en": "Car",
+   "kind": "articulated",
+   "category": "Car",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.7453292519943295
+    },
+    {
+     "name": "joint_dof_rootd_Cb001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.1754262925619792
+    },
+    {
+     "name": "joint_dof_rootd_Ca001_r",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 0.9966777732591626
+    },
+    {
+     "name": "joint_dof_rootd_Ea002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Eb002_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Db001_r",
+     "type": "revolute",
+     "lower": -0.7853981633974483,
+     "upper": 0.7853981633974483
+    },
+    {
+     "name": "joint_dof_Db001_Eb001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    },
+    {
+     "name": "joint_dof_rootd_Da001_r",
+     "type": "revolute",
+     "lower": -0.7853981633974483,
+     "upper": 0.7853981633974483
+    },
+    {
+     "name": "joint_dof_Da001_Ea001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 9,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "laptop_0002",
+   "name_cn": "笔记本",
+   "name_en": "Laptop",
+   "kind": "articulated",
+   "category": "Laptop",
+   "dataset": "PartNeXt",
+   "hero": false,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": 0.01745329252,
+     "upper": 1.850049007
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "barrier_gate_0009",
+   "name_cn": "道闸",
+   "name_en": "Barrier gate",
+   "kind": "articulated",
+   "category": "Barrier Gate",
+   "dataset": "Agentic",
+   "hero": false,
+   "joints": [
+    {
+     "name": "post_to_gate",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.45
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "wallbox_0004",
+   "name_cn": "壁挂箱",
+   "name_en": "Wallbox",
+   "kind": "articulated",
+   "category": "Wallbox",
+   "dataset": "Agentic",
+   "hero": false,
+   "joints": [
+    {
+     "name": "body_to_access_door",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.3
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "swing_0038",
+   "name_cn": "秋千",
+   "name_en": "Swing",
+   "kind": "articulated",
+   "category": "Swing",
+   "dataset": "Agentic",
+   "hero": false,
+   "joints": [
+    {
+     "name": "frame_to_swing",
+     "type": "revolute",
+     "lower": -0.7,
+     "upper": 0.7
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "fan_0090",
+   "name_cn": "风扇",
+   "name_en": "Fan",
+   "kind": "articulated",
+   "category": "Fan",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "windmill_0042",
+   "name_cn": "风车",
+   "name_en": "Windmill",
+   "kind": "articulated",
+   "category": "Windmill",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "continuous",
+     "lower": null,
+     "upper": null
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "bucket_0110",
+   "name_cn": "水桶",
+   "name_en": "Bucket",
+   "kind": "articulated",
+   "category": "Bucket",
+   "dataset": "Shape2Motion",
+   "hero": false,
+   "joints": [
+    {
+     "name": "joint_dof_rootd_Aa001_r",
+     "type": "revolute",
+     "lower": -0.9780535670875677,
+     "upper": 0.0
+    }
+   ],
+   "dof": 1,
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false
+  },
+  {
+   "slug": "bubble_padded_mailer",
+   "name_cn": "气泡信封袋",
+   "name_en": "Bubble Padded Mailer",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/bubble_padded_mailer/whole_textured.glb"
+  },
+  {
+   "slug": "corrugated_shipping_box",
+   "name_cn": "瓦楞纸箱",
+   "name_en": "Corrugated Shipping Box",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/corrugated_shipping_box/whole_textured.glb"
+  },
+  {
+   "slug": "flat_poly_mailer",
+   "name_cn": "扁平快递袋",
+   "name_en": "Flat Poly Mailer",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/flat_poly_mailer/whole_textured.glb"
+  },
+  {
+   "slug": "kraft_paper_bag",
+   "name_cn": "牛皮纸袋",
+   "name_en": "Kraft Paper Bag",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/kraft_paper_bag/whole_textured.glb"
+  },
+  {
+   "slug": "rigid_mailing_tube",
+   "name_cn": "硬质邮寄筒",
+   "name_en": "Rigid Mailing Tube",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/rigid_mailing_tube/whole_textured.glb"
+  },
+  {
+   "slug": "small_cardboard_mailer",
+   "name_cn": "小型纸板盒",
+   "name_en": "Small Cardboard Mailer",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/small_cardboard_mailer/whole_textured.glb"
+  },
+  {
+   "slug": "stuffed_poly_courier_bag",
+   "name_cn": "鼓包快递袋",
+   "name_en": "Stuffed Poly Courier Bag",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/stuffed_poly_courier_bag/whole_textured.glb"
+  },
+  {
+   "slug": "wooden_shipping_crate",
+   "name_cn": "木制运输箱",
+   "name_en": "Wooden Shipping Crate",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/wooden_shipping_crate/whole_textured.glb"
+  },
+  {
+   "slug": "woven_pp_sack",
+   "name_cn": "编织袋",
+   "name_en": "Woven Pp Sack",
+   "kind": "rigid",
+   "category": "Parcels",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/woven_pp_sack/whole_textured.glb"
+  },
+  {
+   "slug": "air_pillow_dunnage_strip",
+   "name_cn": "气枕缓冲条",
+   "name_en": "Air Pillow Dunnage Strip",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/air_pillow_dunnage_strip/whole_textured.glb"
+  },
+  {
+   "slug": "barcode_scan_tunnel",
+   "name_cn": "条码扫描通道",
+   "name_en": "Barcode Scan Tunnel",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/barcode_scan_tunnel/whole_textured.glb"
+  },
+  {
+   "slug": "belt_conveyor_with_side_guides",
+   "name_cn": "带侧挡皮带输送机",
+   "name_en": "Belt Conveyor With Side Guides",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/belt_conveyor_with_side_guides/whole_textured.glb"
+  },
+  {
+   "slug": "box_cutter_utility_knife",
+   "name_cn": "美工刀",
+   "name_en": "Box Cutter Utility Knife",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/box_cutter_utility_knife/whole_textured.glb"
+  },
+  {
+   "slug": "bubble_wrap_pouch",
+   "name_cn": "气泡膜袋",
+   "name_en": "Bubble Wrap Pouch",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/bubble_wrap_pouch/whole_textured.glb"
+  },
+  {
+   "slug": "collapsible_cardboard_gaylord",
+   "name_cn": "折叠纸板托盘箱",
+   "name_en": "Collapsible Cardboard Gaylord",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/collapsible_cardboard_gaylord/whole_textured.glb"
+  },
+  {
+   "slug": "corrugated_label_box",
+   "name_cn": "标签纸箱",
+   "name_en": "Corrugated Label Box",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/corrugated_label_box/whole_textured.glb"
+  },
+  {
+   "slug": "desktop_label_printer",
+   "name_cn": "桌面标签打印机",
+   "name_en": "Desktop Label Printer",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/desktop_label_printer/whole_textured.glb"
+  },
+  {
+   "slug": "destination_sort_bin",
+   "name_cn": "目的地分拣格",
+   "name_en": "Destination Sort Bin",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/destination_sort_bin/whole_textured.glb"
+  },
+  {
+   "slug": "dimensioning_scale_platform",
+   "name_cn": "体积测量秤台",
+   "name_en": "Dimensioning Scale Platform",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/dimensioning_scale_platform/whole_textured.glb"
+  },
+  {
+   "slug": "handheld_barcode_scanner_cradle",
+   "name_cn": "条码枪座",
+   "name_en": "Handheld Barcode Scanner Cradle",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/handheld_barcode_scanner_cradle/whole_textured.glb"
+  },
+  {
+   "slug": "hinged_lid_return_tote",
+   "name_cn": "翻盖周转箱",
+   "name_en": "Hinged Lid Return Tote",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/hinged_lid_return_tote/whole_textured.glb"
+  },
+  {
+   "slug": "kraft_padded_mailer",
+   "name_cn": "牛皮纸气泡信封",
+   "name_en": "Kraft Padded Mailer",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/kraft_padded_mailer/whole_textured.glb"
+  },
+  {
+   "slug": "label_roll_spool",
+   "name_cn": "标签卷轴",
+   "name_en": "Label Roll Spool",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/label_roll_spool/whole_textured.glb"
+  },
+  {
+   "slug": "manual_diverter_gate",
+   "name_cn": "手动分流闸",
+   "name_en": "Manual Diverter Gate",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/manual_diverter_gate/whole_textured.glb"
+  },
+  {
+   "slug": "open_flap_shipping_carton",
+   "name_cn": "开盖运输纸箱",
+   "name_en": "Open Flap Shipping Carton",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/open_flap_shipping_carton/whole_textured.glb"
+  },
+  {
+   "slug": "packing_tape_dispenser",
+   "name_cn": "封箱胶带器",
+   "name_en": "Packing Tape Dispenser",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/packing_tape_dispenser/whole_textured.glb"
+  },
+  {
+   "slug": "roll_cage_swing_gate",
+   "name_cn": "笼车摆门",
+   "name_en": "Roll Cage Swing Gate",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/roll_cage_swing_gate/whole_textured.glb"
+  },
+  {
+   "slug": "roller_conveyor_segment",
+   "name_cn": "滚筒输送段",
+   "name_en": "Roller Conveyor Segment",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/roller_conveyor_segment/whole_textured.glb"
+  },
+  {
+   "slug": "round_poster_tube",
+   "name_cn": "圆形海报筒",
+   "name_en": "Round Poster Tube",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/round_poster_tube/whole_textured.glb"
+  },
+  {
+   "slug": "route_placard_clip_frame",
+   "name_cn": "路线标示牌夹",
+   "name_en": "Route Placard Clip Frame",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/route_placard_clip_frame/whole_textured.glb"
+  },
+  {
+   "slug": "skate_wheel_transfer_rail",
+   "name_cn": "滑轮转运轨",
+   "name_en": "Skate Wheel Transfer Rail",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/skate_wheel_transfer_rail/whole_textured.glb"
+  },
+  {
+   "slug": "sliding_sort_tray",
+   "name_cn": "滑动分拣托盘",
+   "name_en": "Sliding Sort Tray",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/sliding_sort_tray/whole_textured.glb"
+  },
+  {
+   "slug": "small_rigid_mailer_box",
+   "name_cn": "小型硬质邮寄盒",
+   "name_en": "Small Rigid Mailer Box",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/small_rigid_mailer_box/whole_textured.glb"
+  },
+  {
+   "slug": "stackable_sort_crate",
+   "name_cn": "可堆叠分拣筐",
+   "name_en": "Stackable Sort Crate",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/stackable_sort_crate/whole_textured.glb"
+  },
+  {
+   "slug": "swing_top_chute_door",
+   "name_cn": "翻板滑槽门",
+   "name_en": "Swing Top Chute Door",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/swing_top_chute_door/whole_textured.glb"
+  },
+  {
+   "slug": "telescoping_gravity_chute",
+   "name_cn": "伸缩重力滑槽",
+   "name_en": "Telescoping Gravity Chute",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/telescoping_gravity_chute/whole_textured.glb"
+  },
+  {
+   "slug": "tilting_destination_hopper",
+   "name_cn": "倾斜分拣斗",
+   "name_en": "Tilting Destination Hopper",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/tilting_destination_hopper/whole_textured.glb"
+  },
+  {
+   "slug": "triangular_mailing_tube",
+   "name_cn": "三角邮寄筒",
+   "name_en": "Triangular Mailing Tube",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/triangular_mailing_tube/whole_textured.glb"
+  },
+  {
+   "slug": "white_poly_bag_parcel",
+   "name_cn": "白色塑料袋包裹",
+   "name_en": "White Poly Bag Parcel",
+   "kind": "rigid",
+   "category": "Parcel sorting",
+   "dataset": "SimGen logistics",
+   "hero": false,
+   "joints": [],
+   "dof": 0,
+   "physics": {},
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": false,
+   "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/white_poly_bag_parcel/whole_textured.glb"
+  }
+ ]
+}
