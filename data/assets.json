@@ -2,9 +2,41 @@
  "library": {
   "articulated_total": 5000,
   "categories_total": 47,
-  "curated": 89
+  "curated": 90
  },
  "assets": [
+  {
+   "slug": "oven_0001",
+   "name_cn": "烤箱",
+   "name_en": "Oven",
+   "kind": "articulated",
+   "category": "Oven",
+   "dataset": "PartNeXt",
+   "hero": true,
+   "joints": [
+    {
+     "name": "group1_joint",
+     "type": "revolute",
+     "lower": 0.0,
+     "upper": 1.382300767579509
+    }
+   ],
+   "dof": 1,
+   "physics": {
+    "mass": 45.0,
+    "friction": 0.55,
+    "restitution": 0.05,
+    "material": "coated_steel",
+    "engine": "isaac-physx"
+   },
+   "formats": [
+    "URDF",
+    "GLB"
+   ],
+   "poster": true,
+   "demo": true,
+   "model": true
+  },
   {
    "slug": "kettle_0038",
    "name_cn": "水壶",
@@ -1865,7 +1897,7 @@
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/bubble_padded_mailer/whole_textured.glb"
   },
   {
@@ -1878,14 +1910,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 4.2,
+    "friction": 0.65,
+    "restitution": 0.12,
+    "material": "corrugated_cardboard",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/corrugated_shipping_box/whole_textured.glb"
   },
   {
@@ -1904,7 +1942,7 @@
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/flat_poly_mailer/whole_textured.glb"
   },
   {
@@ -1923,7 +1961,7 @@
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/kraft_paper_bag/whole_textured.glb"
   },
   {
@@ -1936,14 +1974,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.18,
+    "friction": 0.65,
+    "restitution": 0.25,
+    "material": "cardboard",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/rigid_mailing_tube/whole_textured.glb"
   },
   {
@@ -1956,14 +2000,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 1.8,
+    "friction": 0.65,
+    "restitution": 0.12,
+    "material": "corrugated_cardboard",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/small_cardboard_mailer/whole_textured.glb"
   },
   {
@@ -1982,7 +2032,7 @@
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/stuffed_poly_courier_bag/whole_textured.glb"
   },
   {
@@ -1995,14 +2045,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 22.0,
+    "friction": 0.6,
+    "restitution": 0.18,
+    "material": "wood_crate",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/wooden_shipping_crate/whole_textured.glb"
   },
   {
@@ -2021,7 +2077,7 @@
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcels/woven_pp_sack/whole_textured.glb"
   },
   {
@@ -2034,14 +2090,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.35,
+    "friction": 0.35,
+    "restitution": 0.6,
+    "material": "air_filled_pe_film",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/air_pillow_dunnage_strip/whole_textured.glb"
   },
   {
@@ -2054,14 +2116,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 140.0,
+    "friction": 0.55,
+    "restitution": 0.08,
+    "material": "anodized_aluminum_acrylic_glass",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/barcode_scan_tunnel/whole_textured.glb"
   },
   {
@@ -2074,14 +2142,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 115.0,
+    "friction": 0.55,
+    "restitution": 0.05,
+    "material": "painted_steel",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/belt_conveyor_with_side_guides/whole_textured.glb"
   },
   {
@@ -2094,14 +2168,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.055,
+    "friction": 0.55,
+    "restitution": 0.08,
+    "material": "yellow ABS plastic",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/box_cutter_utility_knife/whole_textured.glb"
   },
   {
@@ -2114,14 +2194,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.035,
+    "friction": 0.35,
+    "restitution": 0.25,
+    "material": "clear polyethylene bubble film with trapped air",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/bubble_wrap_pouch/whole_textured.glb"
   },
   {
@@ -2134,14 +2220,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 260.0,
+    "friction": 0.75,
+    "restitution": 0.05,
+    "material": "corrugated_cardboard_wood_pallet",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/collapsible_cardboard_gaylord/whole_textured.glb"
   },
   {
@@ -2154,14 +2246,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.58,
+    "friction": 0.65,
+    "restitution": 0.18,
+    "material": "corrugated_cardboard_tape",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/corrugated_label_box/whole_textured.glb"
   },
   {
@@ -2174,14 +2272,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 2.4,
+    "friction": 0.75,
+    "restitution": 0.15,
+    "material": "black ABS/rubber",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/desktop_label_printer/whole_textured.glb"
   },
   {
@@ -2194,14 +2298,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 42.0,
+    "friction": 0.45,
+    "restitution": 0.12,
+    "material": "yellow_polyethylene_black_plastic",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/destination_sort_bin/whole_textured.glb"
   },
   {
@@ -2214,14 +2324,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 4.2,
+    "friction": 0.85,
+    "restitution": 0.08,
+    "material": "brushed_stainless_plastic_rubber",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/dimensioning_scale_platform/whole_textured.glb"
   },
   {
@@ -2234,14 +2350,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.75,
+    "friction": 0.65,
+    "restitution": 0.12,
+    "material": "molded_plastic_glass_rubber",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/handheld_barcode_scanner_cradle/whole_textured.glb"
   },
   {
@@ -2254,14 +2376,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 2.4,
+    "friction": 0.45,
+    "restitution": 0.18,
+    "material": "molded_polypropylene",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/hinged_lid_return_tote/whole_textured.glb"
   },
   {
@@ -2274,14 +2402,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.025,
+    "friction": 0.65,
+    "restitution": 0.12,
+    "material": "kraft_paper_bubble",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/kraft_padded_mailer/whole_textured.glb"
   },
   {
@@ -2294,14 +2428,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.9,
+    "friction": 0.45,
+    "restitution": 0.18,
+    "material": "black_plastic_spool",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/label_roll_spool/whole_textured.glb"
   },
   {
@@ -2314,14 +2454,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 32.0,
+    "friction": 0.65,
+    "restitution": 0.05,
+    "material": "painted_steel_aluminum",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/manual_diverter_gate/whole_textured.glb"
   },
   {
@@ -2334,14 +2480,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 2.4,
+    "friction": 0.65,
+    "restitution": 0.12,
+    "material": "corrugated_cardboard",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/open_flap_shipping_carton/whole_textured.glb"
   },
   {
@@ -2354,14 +2506,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.42,
+    "friction": 0.75,
+    "restitution": 0.08,
+    "material": "red_plastic_steel",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/packing_tape_dispenser/whole_textured.glb"
   },
   {
@@ -2374,14 +2532,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 22.0,
+    "friction": 0.55,
+    "restitution": 0.08,
+    "material": "galvanized_steel_frame_mesh",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/roll_cage_swing_gate/whole_textured.glb"
   },
   {
@@ -2394,14 +2558,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 850.0,
+    "friction": 0.55,
+    "restitution": 0.12,
+    "material": "aluminum_frame",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/roller_conveyor_segment/whole_textured.glb"
   },
   {
@@ -2414,14 +2584,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.18,
+    "friction": 0.65,
+    "restitution": 0.25,
+    "material": "kraft_paper_plastic",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/round_poster_tube/whole_textured.glb"
   },
   {
@@ -2434,14 +2610,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.32,
+    "friction": 0.65,
+    "restitution": 0.05,
+    "material": "plastic_paper_laminate",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/route_placard_clip_frame/whole_textured.glb"
   },
   {
@@ -2454,14 +2636,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 9.5,
+    "friction": 0.65,
+    "restitution": 0.12,
+    "material": "zinc_plated_steel",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/skate_wheel_transfer_rail/whole_textured.glb"
   },
   {
@@ -2474,14 +2662,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 16.0,
+    "friction": 0.55,
+    "restitution": 0.08,
+    "material": "powder_coated_steel",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/sliding_sort_tray/whole_textured.glb"
   },
   {
@@ -2494,14 +2688,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.24,
+    "friction": 0.65,
+    "restitution": 0.18,
+    "material": "corrugated_cardboard_label",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/small_rigid_mailer_box/whole_textured.glb"
   },
   {
@@ -2514,14 +2714,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 2.2,
+    "friction": 0.5,
+    "restitution": 0.18,
+    "material": "polypropylene",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/stackable_sort_crate/whole_textured.glb"
   },
   {
@@ -2534,14 +2740,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 1.8,
+    "friction": 0.55,
+    "restitution": 0.08,
+    "material": "painted_steel",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/swing_top_chute_door/whole_textured.glb"
   },
   {
@@ -2554,14 +2766,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 8.5,
+    "friction": 0.6,
+    "restitution": 0.05,
+    "material": "brushed_stainless",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/telescoping_gravity_chute/whole_textured.glb"
   },
   {
@@ -2574,14 +2792,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 180.0,
+    "friction": 0.65,
+    "restitution": 0.12,
+    "material": "powder_coated_steel_rubber",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/tilting_destination_hopper/whole_textured.glb"
   },
   {
@@ -2594,14 +2818,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.35,
+    "friction": 0.65,
+    "restitution": 0.18,
+    "material": "corrugated_cardboard_plastic_caps",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/triangular_mailing_tube/whole_textured.glb"
   },
   {
@@ -2614,14 +2844,20 @@
    "hero": false,
    "joints": [],
    "dof": 0,
-   "physics": {},
+   "physics": {
+    "mass": 0.08,
+    "friction": 0.35,
+    "restitution": 0.05,
+    "material": "thin polyethylene film with paper label",
+    "engine": "isaac-physx"
+   },
    "formats": [
     "URDF",
     "GLB"
    ],
    "poster": true,
    "demo": true,
-   "model": false,
+   "model": true,
    "source_glb": "/data/wangyubin/animis/workspace/assets_parcel_sorting/white_poly_bag_parcel/whole_textured.glb"
   }
  ]

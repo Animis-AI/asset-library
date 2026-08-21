@@ -1,6 +1,6 @@
 /* SimGen asset library — grid, filters, and the interactive viewer sheet. */
 
-const state = { assets: [], filter: "all", query: "" };
+const state = { assets: [], filter: "all", query: "", sheetTimer: null };
 
 const grid = document.getElementById("grid");
 const empty = document.getElementById("empty");
@@ -90,6 +90,7 @@ function card(a) {
 /* ------------------------------------------------------------- the sheet */
 
 function openSheet(a) {
+  if (state.sheetTimer) { clearInterval(state.sheetTimer); state.sheetTimer = null; }
   sheetViewer.replaceChildren();
   sheetMeta.replaceChildren();
 
@@ -101,7 +102,6 @@ function openSheet(a) {
     mv.setAttribute("shadow-intensity", "0.9");
     mv.setAttribute("shadow-softness", "0.8");
     mv.setAttribute("exposure", "1.05");
-    mv.setAttribute("environment-image", "neutral");
     mv.setAttribute("poster", `assets/${a.slug}/poster.jpg`);
     if (a.kind === "articulated") mv.setAttribute("autoplay", "");
     sheetViewer.appendChild(mv);
@@ -161,7 +161,7 @@ function jointBar(mv) {
     scrubbing = false;
   });
 
-  setInterval(() => {
+  state.sheetTimer = setInterval(() => {
     if (scrubbing || mv.paused || !mv.duration) return;
     const t = mv.currentTime % mv.duration;
     const half = mv.duration / 2;
@@ -203,6 +203,8 @@ function metaPanel(a) {
       ${phys.mass != null ? kv("质量 Mass", `${Number(phys.mass).toFixed(2)} kg`) : ""}
       ${phys.friction != null ? kv("摩擦 Friction", Number(phys.friction).toFixed(2)) : ""}
       ${phys.restitution != null ? kv("恢复系数 Restitution", Number(phys.restitution).toFixed(2)) : ""}
+      ${phys.material ? kv("材质 Material", String(phys.material).replace(/_/g, " ")) : ""}
+      ${phys.engine ? kv("引擎 Engine", phys.engine) : ""}
     </div>` : ""}
 
     <div class="meta-section">
@@ -217,4 +219,5 @@ function closeSheet() {
   overlay.hidden = true;
   document.body.style.overflow = "";
   sheetViewer.replaceChildren();
+  if (state.sheetTimer) { clearInterval(state.sheetTimer); state.sheetTimer = null; }
 }
