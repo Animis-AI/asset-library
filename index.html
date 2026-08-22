@@ -15,7 +15,9 @@
   <nav class="site-nav">
     <a href="#library" data-i18n="nav_library">Library</a>
     <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#" id="request-link" data-i18n="nav_request">Request an asset</a>
     <a href="#" id="cart-link"><span data-i18n="nav_cart">Cart</span> (<span id="cart-count">0</span>)</a>
+    <a href="#" id="account-link">Sign in</a>
     <a href="https://github.com/Animis-AI" target="_blank" rel="noopener">GitHub</a>
     <a href="#" id="lang-toggle">中文</a>
   </nav>
@@ -82,12 +84,87 @@
     </div>
     <div class="cart-items" id="cart-items"></div>
     <div class="cart-foot">
-      <p class="cart-note" id="cart-note" data-i18n="cart_note">Submit the list and
-      we will reply with a quote and license terms. Once online payment is
-      enabled, checkout will deliver the full asset package directly.</p>
-      <button class="cart-checkout" id="cart-checkout" data-i18n="cart_checkout">Request quote</button>
+      <div class="cart-total"><span data-i18n="cart_total">Total</span><b id="cart-total">—</b></div>
+      <p class="cart-note" id="cart-note" data-i18n="cart_note">Pay to unlock the
+      downloads for every asset in the list. Sign-in required at checkout.</p>
+      <button class="cart-checkout" id="cart-checkout" data-i18n="cart_checkout">Checkout</button>
     </div>
   </aside>
+</div>
+
+<!-- auth modal -->
+<div class="modal-overlay" id="auth-overlay" hidden>
+  <div class="modal-backdrop" data-close="auth"></div>
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="sheet-close" data-close="auth" aria-label="close">×</button>
+    <h3 id="auth-title" data-i18n="auth_signin">Sign in</h3>
+    <p class="modal-sub" id="auth-sub" data-i18n="auth_sub_demo">Sandbox accounts — stored in this browser only.</p>
+    <form id="auth-form">
+      <label><span data-i18n="auth_email">Email</span>
+        <input type="email" id="auth-email" required autocomplete="email"></label>
+      <label><span data-i18n="auth_password">Password</span>
+        <input type="password" id="auth-password" required minlength="6" autocomplete="current-password"></label>
+      <p class="form-error" id="auth-error" hidden></p>
+      <button class="btn-solid" type="submit" id="auth-submit" data-i18n="auth_signin">Sign in</button>
+    </form>
+    <p class="modal-switch"><span id="auth-switch-label" data-i18n="auth_noaccount">No account yet?</span>
+      <a href="#" id="auth-switch" data-i18n="auth_register">Register</a></p>
+  </div>
+</div>
+
+<!-- payment modal (sandbox) -->
+<div class="modal-overlay" id="pay-overlay" hidden>
+  <div class="modal-backdrop" data-close="pay"></div>
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="sheet-close" data-close="pay" aria-label="close">×</button>
+    <h3 data-i18n="pay_head">Checkout</h3>
+    <p class="modal-sub sandbox-tag" data-i18n="pay_sandbox">SANDBOX PAYMENT — no real charge. Use card 4242 4242 4242 4242.</p>
+    <div class="pay-summary" id="pay-summary"></div>
+    <form id="pay-form">
+      <label><span data-i18n="pay_card">Card number</span>
+        <input id="pay-card" inputmode="numeric" placeholder="4242 4242 4242 4242" required></label>
+      <div class="pay-row">
+        <label><span data-i18n="pay_exp">Expiry</span><input id="pay-exp" placeholder="12/28" required></label>
+        <label><span>CVC</span><input id="pay-cvc" placeholder="123" required></label>
+      </div>
+      <p class="form-error" id="pay-error" hidden></p>
+      <button class="btn-solid" type="submit" id="pay-submit"></button>
+    </form>
+  </div>
+</div>
+
+<!-- custom-asset request modal -->
+<div class="modal-overlay" id="req-overlay" hidden>
+  <div class="modal-backdrop" data-close="req"></div>
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="sheet-close" data-close="req" aria-label="close">×</button>
+    <h3 data-i18n="req_head">Request a custom asset</h3>
+    <p class="modal-sub" data-i18n="req_sub">Tell us what your sim needs — we build new assets on request and reply by email.</p>
+    <form id="req-form">
+      <label><span data-i18n="req_title">What do you need?</span>
+        <input id="req-title" required maxlength="120" placeholder="e.g. double-door fridge with articulated drawers"></label>
+      <label><span data-i18n="req_detail">Details</span>
+        <textarea id="req-detail" rows="4" maxlength="2000"
+          placeholder="quantity, articulation, physics accuracy, target simulator, deadline…"></textarea></label>
+      <label><span data-i18n="req_ref">Reference link (optional)</span>
+        <input id="req-ref" type="url" placeholder="https://…"></label>
+      <p class="form-error" id="req-error" hidden></p>
+      <button class="btn-solid" type="submit" id="req-submit" data-i18n="req_submit">Submit request</button>
+    </form>
+  </div>
+</div>
+
+<!-- account modal -->
+<div class="modal-overlay" id="acct-overlay" hidden>
+  <div class="modal-backdrop" data-close="acct"></div>
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="sheet-close" data-close="acct" aria-label="close">×</button>
+    <h3 data-i18n="acct_head">Account</h3>
+    <p class="modal-sub" id="acct-email"></p>
+    <h4 class="acct-sub" data-i18n="acct_purchases">Purchases</h4>
+    <div class="acct-purchases" id="acct-purchases"></div>
+    <button class="btn-line" id="acct-signout" data-i18n="auth_signout">Sign out</button>
+  </div>
 </div>
 
 <!-- detail overlay -->
