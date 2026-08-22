@@ -1,6 +1,22 @@
-/* SimGen asset library — grid, filters, and the interactive viewer sheet. */
+/* SimGen asset library — grid, filters, the interactive viewer sheet, cart. */
+
+// Store / checkout configuration. With provider: null, checkout produces a
+// pre-filled quote request email. To take payments, set provider to
+// "lemonsqueezy" and map each slug to its hosted checkout URL in products.
+const STORE = {
+  provider: null,
+  quoteEmail: "fishcakewang11@gmail.com",
+  products: {},
+};
 
 const state = { assets: [], filter: "all", query: "", sheetTimer: null };
+const cart = {
+  items: JSON.parse(localStorage.getItem("simgen-cart") || "[]"),
+  save() { localStorage.setItem("simgen-cart", JSON.stringify(this.items)); },
+  has(slug) { return this.items.includes(slug); },
+  add(slug) { if (!this.has(slug)) { this.items.push(slug); this.save(); renderCart(); } },
+  remove(slug) { this.items = this.items.filter((s) => s !== slug); this.save(); renderCart(); },
+};
 
 const grid = document.getElementById("grid");
 const empty = document.getElementById("empty");
@@ -33,9 +49,66 @@ async function init() {
 
   document.getElementById("sheet-close").addEventListener("click", closeSheet);
   document.getElementById("overlay-backdrop").addEventListener("click", closeSheet);
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !overlay.hidden) closeSheet();
+
+  const cartOverlay = document.getElementById("cart-overlay");
+  document.getElementById("cart-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    renderCart();
+    cartOverlay.hidden = false;
   });
+  document.getElementById("cart-close").addEventListener("click", () => { cartOverlay.hidden = true; });
+  document.getElementById("cart-backdrop").addEventListener("click", () => { cartOverlay.hidden = true; });
+  document.getElementById("cart-checkout").addEventListener("click", checkout);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    if (!cartOverlay.hidden) cartOverlay.hidden = true;
+    else if (!overlay.hidden) closeSheet();
+  });
+  renderCart();
+}
+
+function renderCart() {
+  document.getElementById("cart-count").textContent = cart.items.length;
+  const box = document.getElementById("cart-items");
+  if (!box) return;
+  if (!cart.items.length) {
+    box.innerHTML = `<p class="cart-empty">清单是空的——在资产详情页点击「加入选购」。<br>
+      Your cart is empty — add assets from their detail view.</p>`;
+  } else {
+    box.replaceChildren(...cart.items.map((slug) => {
+      const a = state.assets.find((x) => x.slug === slug);
+      const el = document.createElement("div");
+      el.className = "cart-item";
+      el.innerHTML = `
+        <div>
+          <div class="ci-name"><b>${a ? a.name_cn : slug}</b><span>${a ? a.name_en : ""}</span></div>
+          <div class="ci-meta">${slug}${a ? ` · ${a.dof ? a.dof + " DOF" : "rigid"} · ${a.formats.join("/")}` : ""}</div>
+        </div>
+        <button class="ci-remove" title="remove">×</button>`;
+      el.querySelector(".ci-remove").addEventListener("click", () => cart.remove(slug));
+      return el;
+    }));
+  }
+  document.getElementById("cart-checkout").disabled = !cart.items.length;
+}
+
+function checkout() {
+  if (!cart.items.length) return;
+  if (STORE.provider === "lemonsqueezy") {
+    const url = STORE.products[cart.items[0]];
+    if (url) { window.open(url, "_blank"); return; }
+  }
+  const lines = cart.items.map((slug) => {
+    const a = state.assets.find((x) => x.slug === slug);
+    return `- ${a ? `${a.name_cn} / ${a.name_en}` : slug} (${slug})`;
+  });
+  const subject = encodeURIComponent(`SimGen 资产询价 — ${cart.items.length} 件`);
+  const body = encodeURIComponent(
+    `您好，我想购买以下 sim-ready 资产的完整资产包（URDF + 逐链接网格 + 碰撞凸包 + 物理报告）：\n\n`
+    + lines.join("\n")
+    + `\n\n请回复报价与许可条款。\n\n— 发自 SimGen 资产库 ${location.origin}${location.pathname}`);
+  location.href = `mailto:${STORE.quoteEmail}?subject=${subject}&body=${body}`;
 }
 
 function matches(a) {
@@ -57,18 +130,16 @@ function render() {
 
 function card(a) {
   const el = document.createElement("article");
-  el.className = "card";
+  el.className = "card" + (a.hero ? " is-hero" : "");
   el.innerHTML = `
     <div class="card-media">
       <img loading="lazy" src="assets/${a.slug}/poster.jpg" alt="${a.name_en}">
       ${a.demo ? `<video muted loop playsinline preload="none" src="assets/${a.slug}/demo.mp4"></video>` : ""}
-      <span class="card-tag ${a.hero ? "is-hero" : ""}">${a.hero ? "FEATURED" : a.kind === "articulated" ? "ARTICULATED" : "RIGID"}</span>
     </div>
     <div class="card-body">
-      <div class="card-name">${a.name_cn}</div>
-      <div class="card-name-en">${a.name_en}</div>
+      <div class="card-name">${a.name_cn} <span class="card-name-en">${a.name_en}</span></div>
       <div class="card-badges">
-        ${a.dof ? `<span class="badge dof">${a.dof} DOF</span>` : ""}
+        <span class="badge dof">${a.dof ? `${a.dof} DOF` : "rigid"}</span>
         ${a.formats.map((f) => `<span class="badge">${f}</span>`).join("")}
       </div>
     </div>`;
@@ -127,6 +198,15 @@ function openSheet(a) {
   }
 
   sheetMeta.innerHTML = metaPanel(a);
+  const addBtn = sheetMeta.querySelector(".add-cart");
+  if (addBtn) {
+    addBtn.classList.toggle("in-cart", cart.has(a.slug));
+    addBtn.addEventListener("click", () => {
+      cart.add(a.slug);
+      addBtn.textContent = "已在清单 ✓";
+      addBtn.classList.add("in-cart");
+    });
+  }
   overlay.hidden = false;
   document.body.style.overflow = "hidden";
 }
@@ -209,9 +289,10 @@ function metaPanel(a) {
 
     <div class="meta-section">
       <h4>FILES</h4>
-      ${a.model ? `<a class="dl" href="assets/${a.slug}/model.glb" download="${a.slug}.glb">下载 GLB · Download</a>` : ""}
-      <p class="meta-note">URDF 与逐链接网格、碰撞凸包、物理报告随完整资产包交付。<br>
-      URDF, per-link meshes, collision hulls and physics reports ship with the full asset package.</p>
+      ${a.model ? `<a class="dl" href="assets/${a.slug}/model.glb" download="${a.slug}.glb">预览 GLB · Preview</a>` : ""}
+      <button class="add-cart" data-slug="${a.slug}">${cart.has(a.slug) ? "已在清单 ✓" : "加入选购 · Add to cart"}</button>
+      <p class="meta-note">完整资产包（URDF + 逐链接网格 + 碰撞凸包 + 物理报告）通过选购清单获取。<br>
+      The full asset package (URDF, per-link meshes, collision hulls, physics report) ships via the cart.</p>
     </div>`;
 }
 

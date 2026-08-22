@@ -11,33 +11,29 @@
 <body>
 
 <header class="site-header">
-  <a class="wordmark" href="#">SimGen<span class="wordmark-dot">·</span><span class="wordmark-sub">Animis&nbsp;AI</span></a>
+  <a class="wordmark" href="#">SimGen <span class="wordmark-sub">(Animis&nbsp;AI)</span></a>
   <nav class="site-nav">
-    <a href="#library">资产库<span class="nav-en">Library</span></a>
-    <a href="#about">关于<span class="nav-en">About</span></a>
+    <a href="#library">资产库</a>
+    <a href="#about">关于</a>
+    <a href="#" id="cart-link">选购清单 (<span id="cart-count">0</span>)</a>
     <a href="https://github.com/Animis-AI" target="_blank" rel="noopener">GitHub</a>
   </nav>
 </header>
 
 <section class="hero">
-  <p class="eyebrow">SIM-READY ASSET LIBRARY</p>
-  <h1>快速增长的 <em>sim&#8209;ready</em> 资产库</h1>
-  <p class="hero-sub">铰接结构、物理参数、碰撞凸包——为机器人学习准备的资产，
-  从单张图片到可仿真的 URDF。<br>
-  <span class="hero-sub-en">Articulated, physically parameterized, collision-ready assets for robot
-  learning — from a single image to a simulatable URDF.</span></p>
-  <div class="stats" id="stats">
-    <div class="stat"><span class="stat-num">5000<sup>+</sup></span><span class="stat-label">铰接资产 <i>articulated assets</i></span></div>
-    <div class="stat"><span class="stat-num">47</span><span class="stat-label">品类 <i>categories</i></span></div>
-    <div class="stat"><span class="stat-num" id="stat-curated">—</span><span class="stat-label">在线精选 <i>curated online</i></span></div>
-  </div>
+  <p class="hero-lede">SimGen 是一个快速增长的 sim-ready 资产库：铰接结构、物理参数、
+  碰撞凸包——为机器人学习准备的资产，从单张图片到可仿真的 URDF。
+  每一件资产都可以在浏览器里旋转、缩放，铰接资产可以拖动滑杆开合关节。</p>
+  <p class="hero-lede-en">SimGen is a fast-growing library of simulation-ready assets —
+  articulated, physically parameterized, collision-ready — for robot learning.
+  Every asset is interactive in the browser.</p>
+  <p class="stats"><b>5000+</b> 铰接资产<span class="sep">·</span><b>47</b> 品类<span class="sep">·</span><b><span id="stat-curated">—</span></b> 在线精选</p>
 </section>
 
 <section class="library" id="library">
   <div class="library-head">
-    <h2>精选资产 <span class="h2-en">Curated assets</span></h2>
-    <p class="library-note">每一件都可以旋转、缩放；铰接资产可以拖动滑杆开合关节。
-      <span class="note-en">Every asset is interactive — orbit, zoom, and drive the joints.</span></p>
+    <h2>精选资产 / Curated assets</h2>
+    <p class="library-note">点开任意一件即可交互查看。</p>
   </div>
 
   <div class="controls">
@@ -55,7 +51,7 @@
 </section>
 
 <section class="about" id="about">
-  <h2>关于这套资产 <span class="h2-en">About the library</span></h2>
+  <h2>关于这套资产 / About</h2>
   <div class="about-cols">
     <p>铰接资产由 Sketch2Arti 管线生成：从单张参考图重建部件级几何，
     恢复关节轴与运动范围，再烘焙 PBR 纹理，输出带关节限位的 URDF 与逐链接网格。
@@ -72,9 +68,26 @@
 </section>
 
 <footer class="site-footer">
-  <span>© 2026 Animis AI</span>
-  <span class="footer-right"><a href="https://github.com/Animis-AI" target="_blank" rel="noopener">github.com/Animis-AI</a></span>
+  <span class="fm">SimGen</span>
+  <a href="https://github.com/Animis-AI" target="_blank" rel="noopener">© 2026 Animis AI · github.com/Animis-AI</a>
 </footer>
+
+<!-- cart drawer -->
+<div class="cart-overlay" id="cart-overlay" hidden>
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart" role="dialog" aria-modal="true">
+    <div class="cart-head">
+      <h3>选购清单 / Cart</h3>
+      <button class="sheet-close cart-close" id="cart-close" aria-label="close">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-foot">
+      <p class="cart-note" id="cart-note">提交后我们会通过邮件发送报价与许可条款；
+      在线支付开通后，此处将支持支付后直接下载完整资产包。</p>
+      <button class="cart-checkout" id="cart-checkout">提交询价 · Request quote</button>
+    </div>
+  </aside>
+</div>
 
 <!-- detail overlay -->
 <div class="overlay" id="overlay" hidden>
