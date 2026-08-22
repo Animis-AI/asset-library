@@ -59,6 +59,44 @@
 - [ ] 抱枕缺 Isaac 版演示片;可在有 Isaac Sim 的机器上补渲。
 - [ ] 软体资产(T 恤/抱枕)是否上架资产库(需烘 GLB 预览 + 定价)。
 
+## P-AnyEgo — 数据扩增/自动标注 SaaS(页面已上线,后端待建)
+
+> 现状:https://animis-ai.github.io/anyego/ 已上线——产品页 + **纯浏览器内的
+> 真实扩增演示**(用户选本地视频,亮度/对比/色相/裁切/变速/噪声实时预览,
+> 可生成 4 变体、导出 webm,视频不出本机)+ 标注示例(手部姿态输出为我们
+> 管线的真实结果)+ API 规格 + 申请接入入口。**云端处理与 API 尚未存在**,
+> 页面上已如实标注 private beta。
+
+- [ ] `[owner]` 决策云端算力放哪:自有 GPU 服务器暴露服务 / 租云 GPU
+      (Modal、RunPod、阿里云 FC-GPU)。标注模型(手部姿态/检测/分割/描述)
+      在自有管线里已有,需要包成推理服务。
+- [ ] API 网关:`/v1/videos`(上传→对象存储)、`/v1/augment`、`/v1/annotate`、
+      `/v1/jobs/{id}`、webhook,按页面上已发布的规格实现(规格即合同)。
+- [ ] API Key 签发与计量计费(可先人工发 Key + 按月账单,规模化再接 Stripe
+      metered billing)。
+- [ ] 扩增算子服务端实现(ffmpeg/GPU 版,与浏览器演示同参数语义、种子可复现)。
+- [ ] 队列 + 任务状态存储(Supabase 表可复用)。
+- [ ] `[owner]` 申请表单通知:`anyego/index.html` 里 `REQUEST_ENDPOINT` 填
+      Formspree(与商店需求表单同一路径)。
+
+## P-交付 — 大文件商品(3DGS / 视频)的交付方案
+
+> 背景:后续要在站内售卖视频与 3DGS(Gaussian Splatting)成品。此类文件
+> GB 级,GitHub Pages(公开+仓库体积限制)不能作为付费内容的交付通道。
+
+- [ ] `[owner]` 定交付通道,推荐 **Cloudflare R2 + Worker 签名 URL**:
+      R2 出口流量免费(大文件成本差异巨大),Worker 校验购买记录
+      (Supabase JWT)后签 60s 限时 URL;S3 兼容,后续可换。
+      备选:Supabase Storage(集成最省事,出口流量收费)/
+      Lemon Squeezy 托管交付(零代码,单文件体积上限,控制力弱)。
+- [ ] 3DGS 商品:交付 `.spz`/`.splat` 压缩格式(比 .ply 小一个量级),
+      站内嵌浏览器 splat 预览器(gsplat.js / antimatter15-splat)放**降采样
+      低点数预览版**,全分辨率文件付费后签名 URL 下载。
+- [ ] 视频商品:公开页放低清预览(或 HLS 片段),母带 mp4/ProRes 付费后
+      签名 URL 下载;更强防护再加签名 Cookie/水印,DRM 暂无必要。
+- [ ] 资产库完整资产包(URDF zip)与 3DGS/视频统一走同一条签名 URL 通道
+      (见 P1 的 download 边缘函数,存储后端换 R2 即可)。
+
 ## P4 — 站点体验(非阻塞)
 
 - [ ] 沙盒模式页角标识("Sandbox store — 测试支付"),避免访客误解已在收款。
@@ -75,3 +113,5 @@
 - [x] 公司落地页代码完成(待 P0 建仓库)
 - [x] E2E 冒烟测试:注册→需求→加购→支付→下载解锁→订单入账(puppeteer)
 - [x] 双语目录站上线:96 件资产、交互查看、关节驱动(2026-08-21)
+- [x] AnyEgo 产品页上线(浏览器内扩增演示 + 标注示例 + API 规格 + 申请入口),
+      落地页与资产库导航已互链(2026-08-22)
